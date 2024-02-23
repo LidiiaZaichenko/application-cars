@@ -14,11 +14,25 @@ const handlePending = state => {
   };
 };
 
+const handleRejected = (state, action) => {
+  return {
+    ...state,
+    isLoading: false,
+    error: action.payload,
+  };
+};
+
+const handleFetchContactsSuccess = (state, action) => {
+  return { ...state, isLoading: false, error: null, items: action.payload };
+};
+
 const carsSlice = createSlice({
   name: 'cars',
   initialState,
   extraReducers: {
     [fetchCars.pending]: handlePending,
+    [fetchCars.rejected]: handleRejected,
+    [fetchCars.fulfilled]: handleFetchContactsSuccess,
   },
 });
 
