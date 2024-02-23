@@ -1,38 +1,34 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { fetchCars } from './operations';
 
-const initialState = {
-  items: [],
-  isLoading: false,
-  error: null,
+const handlePending = state => {
+  state.isLoading = true;
 };
 
-const handlePending = state => {
-  return {
-    ...state,
-    isLoading: true,
-  };
+const handleFulfilled = (state, action) => {
+  state.isLoading = false;
+  state.error = null;
+  state.cars = [...action.payload];
 };
 
 const handleRejected = (state, action) => {
-  return {
-    ...state,
-    isLoading: false,
-    error: action.payload,
-  };
-};
-
-const handleFetchContactsSuccess = (state, action) => {
-  return { ...state, isLoading: false, error: null, items: action.payload };
+  state.isLoading = false;
+  state.error = action.payload;
 };
 
 const carsSlice = createSlice({
   name: 'cars',
-  initialState,
-  extraReducers: {
-    [fetchCars.pending]: handlePending,
-    [fetchCars.rejected]: handleRejected,
-    [fetchCars.fulfilled]: handleFetchContactsSuccess,
+  initialState: {
+    cars: [],
+    isLoading: false,
+    error: null,
+  },
+
+  extraReducers: builder => {
+    builder
+      .addCase(fetchCars.pending, handlePending)
+      .addCase(fetchCars.fulfilled, handleFulfilled)
+      .addCase(fetchCars.rejected, handleRejected);
   },
 });
 
