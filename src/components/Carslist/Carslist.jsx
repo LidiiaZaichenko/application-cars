@@ -1,47 +1,24 @@
-import { Container, Image } from './Carslist.styles';
+// import { selectFilteredCars } from '../../redux/selectors.js';
+import Carcard from 'components/Carcard/Carcard';
+import { Container} from './Carslist.styles';
 import { cars } from './addCars';
+// import { useSelector} from "react-redux";
+import { nanoid } from '@reduxjs/toolkit';
+// import { selectCars } from 'redux/selectors';
+
 
 export default function Carlist() {
-  const allCars = cars;
+  const Cars = cars;
+
+  // const allcars = useSelector(selectCars);
+  
+
+
   return (
     <Container>
-      {allCars.map(
-        ({
-          id,
-          make,
-          img,
-          model,
-          rentalPrice,
-          address,
-          rentalCompany,
-          type,
-          mileage,
-        }) => (
-          <ul key={id}>
-            <Container>
-              <div>
-                <Image src={img} alt="" />
-              </div>
-              <div>
-                <h2>
-                  {make}
-                  <span>{model}</span>
-                </h2>
-                <p>{rentalPrice}</p>
-              </div>
-              <ul>
-                <li>{address}</li>
-                <li>{rentalCompany}</li>
-                <li>{type}</li>
-                <li>{model}</li>
-                <li>{mileage}</li>
-                <li>{make}</li>
-              </ul>
-              <button>Learn more</button>
-            </Container>
-          </ul>
-        )
-      )}
+      {Cars.map(car => (
+        <Carcard key={nanoid()} car={car} />
+      ))}
     </Container>
   );
 }
