@@ -1,4 +1,4 @@
-[
+export const cars =  [
     {
         "id": 9582,
         "year": 2008,

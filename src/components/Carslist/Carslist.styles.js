@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  display: grid;
-  max-width: calc(100vw - 48px);
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  grid-gap: 16px;
-  margin-top: 16px;
-  margin-bottom: 0;
-  padding: 0;
-  list-style: none;
-  margin-left: auto;
-  margin-right: auto;
+  width: 274px;
+  height: 426px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+`;
+export const Image = styled.img`
+  width: 274px;
+  height: 268px;
+  object-fit: contain;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 `;
