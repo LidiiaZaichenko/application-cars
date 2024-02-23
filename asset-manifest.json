@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/application-cars/static/css/main.cd2e038f.css",
-    "main.js": "/application-cars/static/js/main.6f430b98.js",
+    "main.js": "/application-cars/static/js/main.592c3de9.js",
     "static/js/544.65f67829.chunk.js": "/application-cars/static/js/544.65f67829.chunk.js",
-    "static/js/320.ec16fc52.chunk.js": "/application-cars/static/js/320.ec16fc52.chunk.js",
+    "static/js/996.c8a7498d.chunk.js": "/application-cars/static/js/996.c8a7498d.chunk.js",
     "static/js/733.d0fd27a4.chunk.js": "/application-cars/static/js/733.d0fd27a4.chunk.js",
-    "static/js/311.22f81467.chunk.js": "/application-cars/static/js/311.22f81467.chunk.js",
+    "static/js/948.19bc98ce.chunk.js": "/application-cars/static/js/948.19bc98ce.chunk.js",
     "index.html": "/application-cars/index.html",
     "main.cd2e038f.css.map": "/application-cars/static/css/main.cd2e038f.css.map",
-    "main.6f430b98.js.map": "/application-cars/static/js/main.6f430b98.js.map",
+    "main.592c3de9.js.map": "/application-cars/static/js/main.592c3de9.js.map",
     "544.65f67829.chunk.js.map": "/application-cars/static/js/544.65f67829.chunk.js.map",
-    "320.ec16fc52.chunk.js.map": "/application-cars/static/js/320.ec16fc52.chunk.js.map",
+    "996.c8a7498d.chunk.js.map": "/application-cars/static/js/996.c8a7498d.chunk.js.map",
     "733.d0fd27a4.chunk.js.map": "/application-cars/static/js/733.d0fd27a4.chunk.js.map",
-    "311.22f81467.chunk.js.map": "/application-cars/static/js/311.22f81467.chunk.js.map"
+    "948.19bc98ce.chunk.js.map": "/application-cars/static/js/948.19bc98ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cd2e038f.css",
-    "static/js/main.6f430b98.js"
+    "static/js/main.592c3de9.js"
   ]
 }
