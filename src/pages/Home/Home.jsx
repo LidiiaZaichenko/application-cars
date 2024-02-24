@@ -1,7 +1,10 @@
+import { Container } from "./Home.styled";
+
 export default function HomePage() {
   return (
-    <main>
+    <Container>
       <h1>"The Car Rental Company"</h1>
+      <img src="https://ftp.goit.study/img/cars-test-task/subaru_outback.jpeg" alt="" />
       <p>
         Welcome to "The Car Rental Company" – your partner in the world of
         comfortable travels! We are pleased to offer you a wide selection of
@@ -12,6 +15,6 @@ export default function HomePage() {
         here to provide you with quality service and reliable transportation
         options.
       </p>
-    </main>
+    </Container>
   );
 }
