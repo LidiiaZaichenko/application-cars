@@ -8,9 +8,17 @@ export const Container = styled.div`
   flex-direction: column;
 `;
 export const Image = styled.img`
+  margin: 0;
+  padding: 0;
+  display: block;
+  border-radius: 14px;
   width: 274px;
   height: 268px;
-  object-fit: contain;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background: #f3f3f2,
+    linear-gradient(180deg, #121417 0%, rgba(18, 20, 23, 0) 100%);
+  object-fit: cover;
 `;
 
+export const Imagebox = styled.div`
+ 
+`;

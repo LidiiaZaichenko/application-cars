@@ -1,5 +1,5 @@
 import { ModalItem } from 'components/Modal/Modal';
-import { Container, Image } from './Carcard.styles';
+import { Container, Image,Imagebox } from './Carcard.styles';
 import { useState } from 'react';
 
 export default function Carcard({ car }) {
@@ -26,13 +26,13 @@ export default function Carcard({ car }) {
   return (
     <>
       <Container>
-        <div>
+        <Imagebox>
           <Image src={img} width={461} height={248} alt="" />
-        </div>
+        </Imagebox>
         <div>
           <h2>
             {make}
-            <span>{}</span>
+            <span>{model}</span>
           </h2>
           <p>{rentalPrice}</p>
         </div>
