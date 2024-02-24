@@ -8,5 +8,5 @@ export const Container = styled.main`
   justify-content: center;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 10px;
 `;
