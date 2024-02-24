@@ -27,7 +27,7 @@ export default function Carcard({ car }) {
     <>
       <Container>
         <div>
-          <Image src={img} alt="" />
+          <Image src={img} width={461} height={248} alt="" />
         </div>
         <div>
           <h2>
